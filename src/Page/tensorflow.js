@@ -7,30 +7,7 @@ export default function Tensorflow() {
 
     const imageRef = useRef()
 
-    // const [isLoading, setIsLoading] = useState(false)
-
-    // const [predictions, setPredictions] = useState([])
-
-    const [predict, predictions, isLoading] = useTFClassify()
-
-
-    // function predict() {
-    //     const img = imageRef.current;
-
-    //     setIsLoading(true)
-    //     mobilenet.load().then(model => {
-    //         // Classify the image.
-    //         model.classify(img).then(predictions => {
-    //             // console.log('Predictions: ');
-    //             setPredictions(predictions);
-
-    //             setIsLoading(false)
-
-    //         });
-    //     });
-    // }
-
-
+    const { predict, predictions, isLoading } = useTFClassify()
 
     return (
         <div className="flex justify-center">
