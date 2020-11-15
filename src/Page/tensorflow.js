@@ -7,7 +7,7 @@ export default function Tensorflow() {
 
     const imageRef = useRef()
 
-    const { predict, predictions, isLoading } = useTFClassify()
+    const { predict, predictions, setPredictions, isLoading } = useTFClassify()
 
     return (
         <div className="flex justify-center">
