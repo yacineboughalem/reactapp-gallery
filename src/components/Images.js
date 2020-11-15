@@ -51,7 +51,7 @@ export default function Images() {
 
 
       <AnimateSharedLayout type={'switch'}>
-        <InfiniteScrollls
+        <InfiniteScroll
           dataLength={images.length}
           next={() => setPage(page + 1)}
           hasMore={true}
@@ -87,7 +87,7 @@ export default function Images() {
                 <motion.img
                   src={showPreview}
                   className="rounded-lg"
-                  width="400"
+                  width="00"
                   height="auto"
                 />
               </motion.div>
